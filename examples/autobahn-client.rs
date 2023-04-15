@@ -40,6 +40,7 @@ async fn run_test(case: u32) -> Result<()> {
             compression: Some(DeflateConfig::default()),
             ..WebSocketConfig::default()
         }),
+        true,
     )
     .await?;
     while let Some(msg) = ws_stream.next().await {
