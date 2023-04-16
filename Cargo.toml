@@ -27,6 +27,7 @@ rustls-tls-webpki-roots = ["__rustls-tls", "webpki-roots"]
 __rustls-tls = ["rustls", "rustls-pki-types", "tokio-rustls", "stream", "tungstenite/__rustls-tls", "handshake"]
 stream = []
 deflate = ["tungstenite/deflate"]
+deflate-opt = ["deflate", "tungstenite/deflate-opt"]
 
 [dependencies]
 log = "0.4.17"
